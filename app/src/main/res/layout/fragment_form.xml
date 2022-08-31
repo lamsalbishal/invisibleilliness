@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".ui.Applicationform.FormFragment">
+
+
+
+
+
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Application Form"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#F43B7A"
+            />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Please complete the form below to address the genuine cause and we'll be in touch soon.    'Note: Inappropriate application will be neglected'"
+              android:textAlignment="center"
+              android:textColor="#FF0000"
+              android:textSize="8dp"
+              android:layout_marginStart="25dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginEnd="25dp" />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginTop="5dp"
+              android:background="#DAB8C3" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:orientation="horizontal">
+              <EditText
+                  android:id="@+id/form_first"
+                  android:layout_width="130dp"
+                  android:hint="@string/first"
+                  android:inputType="textPersonName"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="30dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginEnd="30dp"
+                  android:textColor="#8A8B93"
+                  android:background="@drawable/box_border"
+                  android:padding="8dp" />
+              <EditText
+                  android:id="@+id/form_last"
+                  android:layout_width="130dp"
+                  android:hint="@string/last"
+                  android:inputType="textPersonName"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="5dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginEnd="30dp"
+                  android:textColor="#8A8B93"
+                  android:background="@drawable/box_border"
+                  android:padding="8dp" />
+
+
+          </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="First Name"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:text="Last Name"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textColor="@color/black"
+                android:text="Male"
+                android:textSize="12dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Female"
+                android:textSize="12dp"/>
+            </RadioGroup>
+            <EditText
+                android:id="@+id/form_birth"
+                android:layout_width="130dp"
+                android:hint="@string/birth"
+                android:inputType="textPersonName"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="#8A8B93"
+                android:background="@drawable/box_border"
+                android:padding="8dp" />
+"
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:text="@string/birth"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+          <EditText
+              android:id="@+id/form_email"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="30dp"
+              android:inputType="textWebEmailAddress"
+              android:layout_marginTop="10dp"
+              android:layout_marginEnd="30dp"
+              android:textColor="#8A8B93"
+              android:hint="@string/email"
+              android:background="@drawable/box_border"
+              android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Email Address"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+          <EditText
+              android:id="@+id/form_residential1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textPostalAddress"
+              android:layout_marginStart="30dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginEnd="30dp"
+              android:textColor="#8A8B93"
+              android:hint="@string/residential1"
+              android:background="@drawable/box_border"
+              android:padding="8dp" />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Street address, P.O. Box, State"
+              android:layout_marginStart="50dp"
+              android:textSize="12dp"
+              android:textColor="@color/black"/>
+          <EditText
+              android:id="@+id/form_residential2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="30dp"
+              android:inputType="textPostalAddress"
+              android:layout_marginTop="10dp"
+              android:layout_marginEnd="30dp"
+              android:textColor="#8A8B93"
+              android:hint="@string/residential2"
+              android:background="@drawable/box_border"
+              android:padding="8dp" />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="50dp"
+              android:textSize="12dp"
+              android:textColor="@color/black"
+              android:text="Apartment, suite, unit, building, floor, etc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"  >
+       <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="10dp"
+                app:ccp_textSize="16dp"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showNameCode="true"/>
+
+        <EditText
+            android:id="@+id/ph_no"
+            android:layout_width="150dp"
+            android:hint="@string/ph_no"
+            android:layout_height="wrap_content"
+            android:textColor="#8A8B93"
+            android:layout_gravity="center"
+            android:inputType="phone"
+            android:background="@drawable/box_border"
+            android:padding="8dp" />
+
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:layout_marginStart="150dp"
+            android:textSize="12dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/cause"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/box_border"
+            android:hint="@string/cause"
+            android:padding="8dp"
+            android:textColor="#8A8B93" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please specify the cause in detail"
+            android:layout_marginStart="50dp"
+            android:textSize="12dp"
+            android:textColor="@color/black"/>
+
+
+          <Button
+              android:id="@+id/btn_submit"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Submit"
+              android:onClick="process"
+              android:background="@drawable/button_border"
+              android:layout_gravity="center"
+              android:layout_marginTop="30dp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+           android:gravity="center"
+            android:text="For more enquiry,"/>
+    <TextView
+        android:id="@+id/formcontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:padding="7dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/purple_500"
+        android:gravity="center"
+        android:text="Contact Us"/>
+        </LinearLayout>
+
+      </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
